@@ -1,0 +1,34 @@
+<mat-card class="showdetails" >
+    <mat-card-title class="title">Tasks</mat-card-title>
+
+<div class="example-container mat-elevation-z8">
+<table>
+  <thead>
+      <tr>
+          <th>Username </th>
+          <th colspan="2">Task</th>
+        
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todoData">
+          <td class="td-cell">{{ todo.userName }}</td>
+          <td class="td-cell"><ul>
+              <tr *ngFor="let task of todo.taskName">
+                <td class="iterationtask">
+                  <li>{{task}}
+                          <button class="deleteButton" (click)="openDialog(todo.userName, task)">
+                         <mat-icon>edit</mat-icon></button> 
+                    </li>
+                </td>
+            </tr>
+        </ul>
+    </td>
+          <td class="td-cell"><button class="deleteButton"(click)="this.serviceTodo.deleteUserRow(todo.userName)">
+              <mat-icon>delete</mat-icon></button></td>
+          
+    </tr>        
+  </tbody>
+  </table>
+</div>
+</mat-card>

@@ -1,0 +1,9 @@
+<mat-card class="usercard mat-elevation-z4">
+          
+  <mat-card-title class="title">Add User</mat-card-title>
+   <mat-form-field class="name" appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input  matInput (value)="user" [(ngModel)]="user">
+  </mat-form-field><br>
+  <button (click)="addToDo(user)" mat-raised-button color="primary">Save</button>
+</mat-card>

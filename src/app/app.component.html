@@ -1,0 +1,23 @@
+<mat-toolbar class="mat-elevation-z3">
+    <p>ToDo List</p>
+</mat-toolbar>
+<mat-grid-list cols="6" rowHeight="450px" >
+    <mat-grid-tile [colspan]="1" [rowspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <app-adduser></app-adduser>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+            <app-add-task-to-existing-user></app-add-task-to-existing-user>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1"></mat-grid-tile>
+</mat-grid-list>
+
+
+<mat-grid-list cols="4" rowHeight="550px">
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+        <app-view-all-tasks></app-view-all-tasks>
+</mat-grid-tile>
+
+</mat-grid-list>
+

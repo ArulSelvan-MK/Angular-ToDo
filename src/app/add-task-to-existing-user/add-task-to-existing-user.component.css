@@ -1,0 +1,40 @@
+::ng-deep .taskcard{
+    width: 400px;
+    border-radius: 10px !important;
+    background-color: #F5F5F5;
+
+
+}
+.name{
+  margin-left: 20px;
+  margin-right: 12px;
+  width: 240px;
+ }
+
+.title{
+   font-size: 30px;
+   margin-top: 20px !important;
+   margin-bottom: 40px;
+   margin-left: 20px;
+   font-weight: bold;   
+}
+
+ .task {
+   margin-left: 20px;
+   margin-right: 12px;
+   width: 350px;
+ }
+
+
+ button{
+   border-radius: 18px;
+   margin-left: 320px;
+   background-color: #4682B4 !important;
+
+ }
+ textarea{
+     height: 70px;
+     width: 350px;
+ }
+
+

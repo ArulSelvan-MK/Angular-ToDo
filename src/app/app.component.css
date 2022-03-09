@@ -1,0 +1,13 @@
+mat-toolbar{
+    background-color: #4682B4;
+   height: 65px;
+   border-radius: 0px 0px 5px 5px;
+   color: white;
+}
+
+p{
+    margin-bottom: 3px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+

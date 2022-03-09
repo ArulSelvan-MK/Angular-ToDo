@@ -1,0 +1,15 @@
+<mat-card class="taskcard mat-elevation-z4">
+    <mat-card-title class="title">Assign Task</mat-card-title>
+    <mat-form-field class="name" appearance="outline">
+        <mat-label>Select User</mat-label>
+        <mat-select #updateuser disableRipple>
+            <mat-option *ngFor="let user of listUser" value={{user}}>{{user}}</mat-option>
+          </mat-select>
+  </mat-form-field><br>
+    <mat-form-field class="task" appearance="outline">
+        <mat-label>Task</mat-label>
+        <textarea #updatetask matInput (value)="task" [(ngModel)]="task"></textarea>
+    </mat-form-field>
+   
+    <button (click)="assignTask(updateuser.value,task)" mat-raised-button color="primary">Save</button>
+</mat-card>
