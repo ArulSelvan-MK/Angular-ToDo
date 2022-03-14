@@ -1,8 +1,4 @@
 <h1 mat-dialog-title style="font-weight: bolder;">Edit Task</h1>
-<!-- <div mat-dialog-content class="taskcard mat-elevation-z4"> -->
-
-    <!-- <mat-card class="taskcard mat-elevation-z4"> -->
-        <!-- <mat-card-title class="title">Edit Task</mat-card-title> -->
         <mat-form-field class="name" appearance="outline">
             <mat-label>UserName</mat-label>
             <input  #userName matInput value={{this.serviceTodo.editIndividulaTask.userName}} disabled>
@@ -14,5 +10,3 @@
         <br>
         <button style="margin-left: 220px;" (click)="this.dialogRef.close()" mat-raised-button color="primary">Cancel</button>        
         <button style="margin-left: 22px;" (click)="updateTask(userName.value, updatetask.value)" mat-raised-button color="primary">Update</button>
-    <!-- </mat-card> -->
-<!-- </div> -->

@@ -13,7 +13,7 @@
 
 
 
-   .task {
+.task {
     margin-left: 20px;
     margin-right: 12px;
     width: 350px;
@@ -26,7 +26,7 @@
     background-color: #4682B4 !important;
  
   }
-  textarea{
+textarea{
       height: 70px;
       width: 350px;
   }

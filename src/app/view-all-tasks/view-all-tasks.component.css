@@ -11,14 +11,12 @@
  ::ng-deep .viewdetails{
    width: 910px;
    background-color: #F5F5F5;
-   border-radius: 10px !important;
  }
 
 table{
  width: 920px;
- border-radius: 10px !important;
  background-color: #F5F5F5;
- overflow: auto;
+
 }
 
 ::ng-deep.showdetails{
@@ -26,6 +24,16 @@ table{
  margin-bottom: 50px;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background: gray;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4682B4;
+  border-radius: 30px;
+}
 
 ::ng-deep .deleteButton{
   border: none !important;
@@ -38,7 +46,7 @@ table{
 .example-container {
   height: 400px;
   max-width: 100%;
-  overflow: auto;
+  overflow-y:scroll;
  }
 
 mat-divider{
